@@ -1,0 +1,3 @@
+[submodule "2-Hardware/libraries"]
+	path = 2-Hardware/libraries
+	url = git@github.com:imciner2/KiCad-Libraries.git
