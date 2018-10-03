@@ -286,13 +286,6 @@ Wire Wire Line
 	1200 4350 1300 4350
 Connection ~ 1300 4450
 Wire Wire Line
-	1300 1050 1300 1200
-Wire Wire Line
-	1300 1100 1200 1100
-Wire Wire Line
-	1300 1200 1200 1200
-Connection ~ 1300 1100
-Wire Wire Line
 	1200 1400 1300 1400
 Wire Wire Line
 	1300 1400 1300 1550
@@ -300,26 +293,12 @@ Wire Wire Line
 	1200 1500 1300 1500
 Connection ~ 1300 1500
 Wire Wire Line
-	1300 2200 1200 2200
-Wire Wire Line
-	1300 2050 1300 2200
-Wire Wire Line
-	1200 2100 1300 2100
-Connection ~ 1300 2100
-Wire Wire Line
 	1200 2500 1300 2500
 Wire Wire Line
 	1300 2400 1300 2550
 Wire Wire Line
 	1200 2400 1300 2400
 Connection ~ 1300 2500
-Wire Wire Line
-	1300 3200 1200 3200
-Wire Wire Line
-	1300 3050 1300 3200
-Wire Wire Line
-	1200 3100 1300 3100
-Connection ~ 1300 3100
 Wire Wire Line
 	1200 3400 1300 3400
 Wire Wire Line
@@ -358,22 +337,6 @@ F 3 "" H 8400 2650 50  0000 C CNN
 	1    8400 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8300 1350 8400 1350
-Wire Wire Line
-	8400 1350 8400 2650
-Wire Wire Line
-	8300 1650 8400 1650
-Connection ~ 8400 1650
-Wire Wire Line
-	8300 1950 8400 1950
-Connection ~ 8400 1950
-Wire Wire Line
-	8300 2250 8400 2250
-Connection ~ 8400 2250
-Wire Wire Line
-	8300 2550 8400 2550
-Connection ~ 8400 2550
 $Comp
 L GND #PWR07
 U 1 1 5BB3A36C
@@ -426,22 +389,22 @@ F 3 "" H 9950 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9950 3900 9950 4450
+	9950 3750 9950 4450
 Wire Wire Line
 	9950 4050 9750 4050
 Wire Wire Line
 	9750 3900 9950 3900
 Connection ~ 9950 4050
 Text Label 8450 1200 0    60   ~ 0
-DIO0
+X_ENC_A
 Text Label 8450 1500 0    60   ~ 0
-DIO1
+X_ENC_B
 Text Label 8450 1800 0    60   ~ 0
-DIO2
+Y_ENC_A
 Text Label 8450 2100 0    60   ~ 0
-DIO3
+Y_ENC_B
 Text Label 8450 2400 0    60   ~ 0
-DIO4
+AX_ENC_A
 Wire Wire Line
 	8450 2400 8300 2400
 Wire Wire Line
@@ -453,47 +416,45 @@ Wire Wire Line
 Wire Wire Line
 	8300 1200 8450 1200
 Text Label 8450 2950 0    60   ~ 0
-DIO5
+AX_ENC_B
 Text Label 8450 3250 0    60   ~ 0
-DIO6
+AY_ENC_A
 Text Label 8450 3550 0    60   ~ 0
-DIO7
+AY_ENC_B
 Text Label 8450 3850 0    60   ~ 0
-DIO8
+Z_ENC_A_USB
 Text Label 8450 4150 0    60   ~ 0
-DIO9
+Z_ENC_B_USB
 Text Label 9900 1250 0    60   ~ 0
-DIO10
+Z_SWITCH
 Text Label 9900 1400 0    60   ~ 0
-DIO11
+X_SWITCH
 Text Label 9900 1550 0    60   ~ 0
-DIO12
+Y_SWITCH
 Text Label 9900 1700 0    60   ~ 0
-DIO13
+Z_THERM
 Text Label 9900 1850 0    60   ~ 0
-DIO14
+Z_PWM
 Text Label 9900 2000 0    60   ~ 0
-DIO15
+Z_BRAKE
 Text Label 9900 2150 0    60   ~ 0
-DIO16
+Z_DIR
 Text Label 9900 2300 0    60   ~ 0
-DIO17
+Y_THERM
 Text Label 9900 2450 0    60   ~ 0
-DIO18
+Y_PWM
 Text Label 9900 2600 0    60   ~ 0
-DIO19
+Y_BRAKE
 Text Label 9900 3000 0    60   ~ 0
-DIO20
+Y_DIR
 Text Label 9900 3150 0    60   ~ 0
-DIO21
+X_THERM
 Text Label 9900 3300 0    60   ~ 0
-DIO22
+X_PWM
 Text Label 9900 3450 0    60   ~ 0
-DIO23
+X_BRAKE
 Text Label 9900 3600 0    60   ~ 0
-DIO24
-Text Label 9900 3750 0    60   ~ 0
-DIO25
+X_DIR
 Wire Wire Line
 	8450 2950 8300 2950
 Wire Wire Line
@@ -535,7 +496,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 3600 9750 3600
 Wire Wire Line
-	9750 3750 9900 3750
+	9750 3750 9950 3750
 Text Notes 8750 800  0    60   ~ 0
 Crane Connector
 Text Notes 800  650  0    60   ~ 0
@@ -556,110 +517,6 @@ Text Notes 4650 700  0    60   ~ 0
 PMOD 3
 Text Notes 5800 700  0    60   ~ 0
 PMOD 4
-Text Label 2850 1150 0    60   ~ 0
-DIO0
-Text Label 2850 2100 0    60   ~ 0
-DIO1
-Text Label 2850 1250 0    60   ~ 0
-DIO2
-Text Label 2850 2200 0    60   ~ 0
-DIO3
-Text Label 2850 1350 0    60   ~ 0
-DIO4
-Text Label 2850 2300 0    60   ~ 0
-DIO5
-Text Label 2850 1450 0    60   ~ 0
-DIO6
-Text Label 2850 2400 0    60   ~ 0
-DIO7
-Text Label 4000 1150 0    60   ~ 0
-DIO8
-Text Label 4000 2150 0    60   ~ 0
-DIO9
-Text Label 4000 1250 0    60   ~ 0
-DIO10
-Text Label 4000 2250 0    60   ~ 0
-DIO11
-Text Label 4000 1350 0    60   ~ 0
-DIO12
-Text Label 4000 2350 0    60   ~ 0
-DIO13
-Text Label 4000 1450 0    60   ~ 0
-DIO14
-Text Label 4000 2450 0    60   ~ 0
-DIO15
-Text Label 5150 1150 0    60   ~ 0
-DIO16
-Text Label 5150 2150 0    60   ~ 0
-DIO17
-Text Label 5150 1250 0    60   ~ 0
-DIO18
-Text Label 5150 2250 0    60   ~ 0
-DIO19
-Text Label 5150 1350 0    60   ~ 0
-DIO20
-Text Label 5150 2350 0    60   ~ 0
-DIO21
-Text Label 5150 1450 0    60   ~ 0
-DIO22
-Text Label 5150 2450 0    60   ~ 0
-DIO23
-Text Label 6300 1150 0    60   ~ 0
-DIO24
-Text Label 6300 1250 0    60   ~ 0
-DIO25
-Wire Wire Line
-	2750 1150 2850 1150
-Wire Wire Line
-	2850 1250 2750 1250
-Wire Wire Line
-	2750 1350 2850 1350
-Wire Wire Line
-	2850 1450 2750 1450
-Wire Wire Line
-	2750 2100 2850 2100
-Wire Wire Line
-	2850 2200 2750 2200
-Wire Wire Line
-	2750 2300 2850 2300
-Wire Wire Line
-	2850 2400 2750 2400
-Wire Wire Line
-	3900 2450 4000 2450
-Wire Wire Line
-	4000 2350 3900 2350
-Wire Wire Line
-	3900 2250 4000 2250
-Wire Wire Line
-	4000 2150 3900 2150
-Wire Wire Line
-	3900 1450 4000 1450
-Wire Wire Line
-	4000 1350 3900 1350
-Wire Wire Line
-	3900 1250 4000 1250
-Wire Wire Line
-	4000 1150 3900 1150
-Wire Wire Line
-	5050 1150 5150 1150
-Wire Wire Line
-	5150 1250 5050 1250
-Wire Wire Line
-	5050 1350 5150 1350
-Wire Wire Line
-	5150 1450 5050 1450
-Wire Wire Line
-	5050 2150 5150 2150
-Wire Wire Line
-	5150 2250 5050 2250
-Wire Wire Line
-	5050 2350 5150 2350
-Wire Wire Line
-	5150 2450 5050 2450
-Wire Wire Line
-	6300 1150 6200 1150
-Wire Wire Line
-	6200 1250 6300 1250
 $Comp
 L VCC #PWR010
 U 1 1 5BB4C510
@@ -669,39 +526,6 @@ F 1 "VCC" H 1300 4150 50  0000 C CNN
 F 2 "" H 1300 4000 50  0000 C CNN
 F 3 "" H 1300 4000 50  0000 C CNN
 	1    1300 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L VCC #PWR011
-U 1 1 5BB4C595
-P 1300 3050
-F 0 "#PWR011" H 1300 2900 50  0001 C CNN
-F 1 "VCC" H 1300 3200 50  0000 C CNN
-F 2 "" H 1300 3050 50  0000 C CNN
-F 3 "" H 1300 3050 50  0000 C CNN
-	1    1300 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L VCC #PWR012
-U 1 1 5BB4C5EA
-P 1300 2050
-F 0 "#PWR012" H 1300 1900 50  0001 C CNN
-F 1 "VCC" H 1300 2200 50  0000 C CNN
-F 2 "" H 1300 2050 50  0000 C CNN
-F 3 "" H 1300 2050 50  0000 C CNN
-	1    1300 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L VCC #PWR013
-U 1 1 5BB4C66F
-P 1300 1050
-F 0 "#PWR013" H 1300 900 50  0001 C CNN
-F 1 "VCC" H 1300 1200 50  0000 C CNN
-F 2 "" H 1300 1050 50  0000 C CNN
-F 3 "" H 1300 1050 50  0000 C CNN
-	1    1300 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -764,4 +588,158 @@ Text Notes 750  5100 0    60   ~ 0
 Voltage Selector
 Wire Notes Line
 	1600 6050 500  6050
+Text Label 8450 1350 0    60   ~ 0
+Z_ENC_A_PCI
+Text Label 8450 1650 0    60   ~ 0
+Z_ENC_B_PCI
+Wire Wire Line
+	8300 1350 8450 1350
+Wire Wire Line
+	8450 1650 8300 1650
+Wire Wire Line
+	8300 1950 8400 1950
+Wire Wire Line
+	8400 1950 8400 2650
+Wire Wire Line
+	8300 2250 8400 2250
+Connection ~ 8400 2250
+Wire Wire Line
+	8300 2550 8400 2550
+Connection ~ 8400 2550
+Connection ~ 9950 3900
+Text Label 2800 5200 0    60   ~ 0
+Z_ENC_A_PCI
+Text Label 2800 5800 0    60   ~ 0
+Z_ENC_A_USB
+Text Label 2800 5500 0    60   ~ 0
+Z_ENC_A
+Text Label 2800 5050 0    60   ~ 0
+Z_ENC_B_PCI
+Text Label 2800 5350 0    60   ~ 0
+Z_ENC_B
+Text Label 2800 5650 0    60   ~ 0
+Z_ENC_B_USB
+Text Label 6300 2250 0    60   ~ 0
+X_ENC_A
+Text Label 6300 2150 0    60   ~ 0
+X_ENC_B
+Text Label 5150 2250 0    60   ~ 0
+Y_ENC_A
+Text Label 5150 2150 0    60   ~ 0
+Y_ENC_B
+Text Label 2850 1150 0    60   ~ 0
+AX_ENC_A
+Text Label 2850 1250 0    60   ~ 0
+AX_ENC_B
+Text Label 2850 1350 0    60   ~ 0
+AY_ENC_A
+Text Label 2850 1450 0    60   ~ 0
+AY_ENC_B
+$Comp
+L CONN_006 P3
+U 1 1 5BB50392
+P 2500 5400
+F 0 "P3" H 2500 5850 60  0000 C CNN
+F 1 "CONN_006" H 2500 4900 60  0000 C CNN
+F 2 "Connectors:CONN_2.54mm_2x03" H 2500 5450 60  0001 C CNN
+F 3 "" H 2500 5450 60  0000 C CNN
+	1    2500 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5050 2700 5050
+Wire Wire Line
+	2700 5200 2800 5200
+Wire Wire Line
+	2800 5350 2700 5350
+Wire Wire Line
+	2700 5500 2800 5500
+Wire Wire Line
+	2800 5650 2700 5650
+Wire Wire Line
+	2700 5800 2800 5800
+Text Label 6300 2350 0    60   ~ 0
+X_SWITCH
+Text Label 6300 1150 0    60   ~ 0
+X_THERM
+Text Label 6300 1250 0    60   ~ 0
+X_PWM
+Text Label 6300 1450 0    60   ~ 0
+X_DIR
+Text Label 6300 1350 0    60   ~ 0
+X_BRAKE
+Text Label 5150 2350 0    60   ~ 0
+Y_SWITCH
+Text Label 5150 1150 0    60   ~ 0
+Y_THERM
+Text Label 5150 1250 0    60   ~ 0
+Y_PWM
+Text Label 5150 1450 0    60   ~ 0
+Y_DIR
+Text Label 5150 1350 0    60   ~ 0
+Y_BRAKE
+Text Label 4000 1250 0    60   ~ 0
+Z_PWM
+Text Label 4000 1450 0    60   ~ 0
+Z_DIR
+Text Label 4000 1350 0    60   ~ 0
+Z_BRAKE
+Text Label 4000 1150 0    60   ~ 0
+Z_THERM
+Text Label 4000 2250 0    60   ~ 0
+Z_ENC_A
+Text Label 4000 2150 0    60   ~ 0
+Z_ENC_B
+Text Label 4000 2350 0    60   ~ 0
+Z_SWITCH
+Wire Wire Line
+	2750 1150 2850 1150
+Wire Wire Line
+	2850 1250 2750 1250
+Wire Wire Line
+	2750 1350 2850 1350
+Wire Wire Line
+	2850 1450 2750 1450
+Wire Wire Line
+	4000 1150 3900 1150
+Wire Wire Line
+	3900 1250 4000 1250
+Wire Wire Line
+	4000 1350 3900 1350
+Wire Wire Line
+	3900 1450 4000 1450
+Wire Wire Line
+	4000 2150 3900 2150
+Wire Wire Line
+	3900 2250 4000 2250
+Wire Wire Line
+	4000 2350 3900 2350
+Wire Wire Line
+	5150 2350 5050 2350
+Wire Wire Line
+	5050 2250 5150 2250
+Wire Wire Line
+	5150 2150 5050 2150
+Wire Wire Line
+	5050 1450 5150 1450
+Wire Wire Line
+	5150 1350 5050 1350
+Wire Wire Line
+	5050 1250 5150 1250
+Wire Wire Line
+	5150 1150 5050 1150
+Wire Wire Line
+	6300 1150 6200 1150
+Wire Wire Line
+	6200 1250 6300 1250
+Wire Wire Line
+	6300 1350 6200 1350
+Wire Wire Line
+	6200 1450 6300 1450
+Wire Wire Line
+	6300 2150 6200 2150
+Wire Wire Line
+	6200 2250 6300 2250
+Wire Wire Line
+	6300 2350 6200 2350
 $EndSCHEMATC
