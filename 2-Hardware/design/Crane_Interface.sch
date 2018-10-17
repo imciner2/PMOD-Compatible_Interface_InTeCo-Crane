@@ -66,6 +66,9 @@ F 0 "J1" H 950 1700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 950 900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 1100 1300 60  0001 C CNN
 F 3 "" H 1100 1300 60  0000 C CNN
+F 4 "61301221021" H 2500 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 2500 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 2500 1300 60  0001 C CNN "ManufacturerName"
 	1    950  1300
 	1    0    0    -1  
 $EndComp
@@ -77,6 +80,9 @@ F 0 "J1" H 2500 1700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 2500 900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 2650 1300 60  0001 C CNN
 F 3 "" H 2650 1300 60  0000 C CNN
+F 4 "61301221021" H 2500 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 2500 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 2500 1300 60  0001 C CNN "ManufacturerName"
 	2    2500 1300
 	1    0    0    -1  
 $EndComp
@@ -88,6 +94,9 @@ F 0 "J1" H 2500 2650 60  0000 C CNN
 F 1 "PMOD_DUAL" H 2500 1850 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 2650 2250 60  0001 C CNN
 F 3 "" H 2650 2250 60  0000 C CNN
+F 4 "61301221021" H 2500 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 2500 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 2500 1300 60  0001 C CNN "ManufacturerName"
 	3    2500 2250
 	1    0    0    -1  
 $EndComp
@@ -99,6 +108,9 @@ F 0 "J2" H 950 2700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 950 1900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 1100 2300 60  0001 C CNN
 F 3 "" H 1100 2300 60  0000 C CNN
+F 4 "61301221021" H 2500 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 2500 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 2500 1300 60  0001 C CNN "ManufacturerName"
 	1    950  2300
 	1    0    0    -1  
 $EndComp
@@ -110,6 +122,9 @@ F 0 "J2" H 3650 1700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 3650 900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 3800 1300 60  0001 C CNN
 F 3 "" H 3800 1300 60  0000 C CNN
+F 4 "61301221021" H 3650 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 3650 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 3650 1300 60  0001 C CNN "ManufacturerName"
 	2    3650 1300
 	1    0    0    -1  
 $EndComp
@@ -121,6 +136,9 @@ F 0 "J2" H 3650 2700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 3650 1900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 3800 2300 60  0001 C CNN
 F 3 "" H 3800 2300 60  0000 C CNN
+F 4 "61301221021" H 2500 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 2500 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 2500 1300 60  0001 C CNN "ManufacturerName"
 	3    3650 2300
 	1    0    0    -1  
 $EndComp
@@ -132,6 +150,9 @@ F 0 "J3" H 950 3700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 950 2900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 1100 3300 60  0001 C CNN
 F 3 "" H 1100 3300 60  0000 C CNN
+F 4 "61301221021" H 2500 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 2500 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 2500 1300 60  0001 C CNN "ManufacturerName"
 	1    950  3300
 	1    0    0    -1  
 $EndComp
@@ -143,6 +164,9 @@ F 0 "J3" H 4800 1700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 4800 900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 4950 1300 60  0001 C CNN
 F 3 "" H 4950 1300 60  0000 C CNN
+F 4 "61301221021" H 4800 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 4800 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 4800 1300 60  0001 C CNN "ManufacturerName"
 	2    4800 1300
 	1    0    0    -1  
 $EndComp
@@ -154,6 +178,9 @@ F 0 "J3" H 4800 2700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 4800 1900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 4950 2300 60  0001 C CNN
 F 3 "" H 4950 2300 60  0000 C CNN
+F 4 "61301221021" H 2500 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 2500 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 2500 1300 60  0001 C CNN "ManufacturerName"
 	3    4800 2300
 	1    0    0    -1  
 $EndComp
@@ -165,6 +192,9 @@ F 0 "J4" H 950 4650 60  0000 C CNN
 F 1 "PMOD_DUAL" H 950 3850 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 1100 4250 60  0001 C CNN
 F 3 "" H 1100 4250 60  0000 C CNN
+F 4 "61301221021" H 2500 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 2500 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 2500 1300 60  0001 C CNN "ManufacturerName"
 	1    950  4250
 	1    0    0    -1  
 $EndComp
@@ -176,6 +206,9 @@ F 0 "J4" H 5950 1700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 5950 900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 6100 1300 60  0001 C CNN
 F 3 "" H 6100 1300 60  0000 C CNN
+F 4 "61301221021" H 5950 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 5950 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 5950 1300 60  0001 C CNN "ManufacturerName"
 	2    5950 1300
 	1    0    0    -1  
 $EndComp
@@ -187,6 +220,9 @@ F 0 "J4" H 5950 2700 60  0000 C CNN
 F 1 "PMOD_DUAL" H 5950 1900 60  0000 C CNN
 F 2 "Digilent:PMOD_DOUBLE_MALE" H 6100 2300 60  0001 C CNN
 F 3 "" H 6100 2300 60  0000 C CNN
+F 4 "61301221021" H 2500 1300 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5354-ND" H 2500 1300 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics Inc." H 2500 1300 60  0001 C CNN "ManufacturerName"
 	3    5950 2300
 	1    0    0    -1  
 $EndComp
@@ -198,6 +234,9 @@ F 0 "P1" H 8100 2600 60  0000 C CNN
 F 1 "CONN_040" H 8100 1050 60  0000 C CNN
 F 2 "Connectors:CONN_2.54mm_2x20" H 8100 1250 60  0001 C CNN
 F 3 "" H 8100 1250 60  0000 C CNN
+F 4 "SBH11-PBPC-D20-ST-BK" H 8100 1850 60  0001 C CNN "ManufacturerNumber"
+F 5 "S9175-ND" H 8100 1850 60  0001 C CNN "DigikeyNumber"
+F 6 "Sullins Connector Solutions" H 8100 1850 60  0001 C CNN "ManufacturerName"
 	1    8100 1850
 	1    0    0    -1  
 $EndComp
@@ -209,6 +248,9 @@ F 0 "P1" H 8100 4350 60  0000 C CNN
 F 1 "CONN_040" H 8100 2800 60  0000 C CNN
 F 2 "Connectors:CONN_2.54mm_2x20" H 8100 3000 60  0001 C CNN
 F 3 "" H 8100 3000 60  0000 C CNN
+F 4 "SBH11-PBPC-D20-ST-BK" H 8100 1850 60  0001 C CNN "ManufacturerNumber"
+F 5 "S9175-ND" H 8100 1850 60  0001 C CNN "DigikeyNumber"
+F 6 "Sullins Connector Solutions" H 8100 1850 60  0001 C CNN "ManufacturerName"
 	2    8100 3600
 	1    0    0    -1  
 $EndComp
@@ -220,6 +262,9 @@ F 0 "P1" H 9550 2650 60  0000 C CNN
 F 1 "CONN_040" H 9550 1100 60  0000 C CNN
 F 2 "Connectors:CONN_2.54mm_2x20" H 9550 1300 60  0001 C CNN
 F 3 "" H 9550 1300 60  0000 C CNN
+F 4 "SBH11-PBPC-D20-ST-BK" H 8100 1850 60  0001 C CNN "ManufacturerNumber"
+F 5 "S9175-ND" H 8100 1850 60  0001 C CNN "DigikeyNumber"
+F 6 "Sullins Connector Solutions" H 8100 1850 60  0001 C CNN "ManufacturerName"
 	3    9550 1900
 	1    0    0    -1  
 $EndComp
@@ -231,6 +276,9 @@ F 0 "P1" H 9550 4400 60  0000 C CNN
 F 1 "CONN_040" H 9550 2850 60  0000 C CNN
 F 2 "Connectors:CONN_2.54mm_2x20" H 9550 3050 60  0001 C CNN
 F 3 "" H 9550 3050 60  0000 C CNN
+F 4 "SBH11-PBPC-D20-ST-BK" H 8100 1850 60  0001 C CNN "ManufacturerNumber"
+F 5 "S9175-ND" H 8100 1850 60  0001 C CNN "DigikeyNumber"
+F 6 "Sullins Connector Solutions" H 8100 1850 60  0001 C CNN "ManufacturerName"
 	4    9550 3650
 	1    0    0    -1  
 $EndComp
@@ -536,6 +584,9 @@ F 0 "P2" H 850 5900 60  0000 C CNN
 F 1 "CONN_003" H 850 5400 60  0000 C CNN
 F 2 "Connectors:CONN_2.54mm_1x03" H 850 5650 60  0001 C CNN
 F 3 "" H 850 5650 60  0000 C CNN
+F 4 "61300311121" H 850 5650 60  0001 C CNN "ManufacturerNumber"
+F 5 "732-5316-ND" H 850 5650 60  0001 C CNN "DigikeyNumber"
+F 6 "Wurth Electronics" H 850 5650 60  0001 C CNN "ManufacturerName"
 	1    850  5650
 	1    0    0    -1  
 $EndComp
@@ -643,6 +694,9 @@ F 0 "P3" H 2500 5850 60  0000 C CNN
 F 1 "CONN_006" H 2500 4900 60  0000 C CNN
 F 2 "Connectors:CONN_2.54mm_2x03" H 2500 5450 60  0001 C CNN
 F 3 "" H 2500 5450 60  0000 C CNN
+F 4 "67997-206HLF" H 2500 5400 60  0001 C CNN "ManufacturerNumber"
+F 5 "609-3234-ND" H 2500 5400 60  0001 C CNN "DigikeyNumber"
+F 6 "Amphenol FCI" H 2500 5400 60  0001 C CNN "ManufacturerName"
 	1    2500 5400
 	1    0    0    -1  
 $EndComp

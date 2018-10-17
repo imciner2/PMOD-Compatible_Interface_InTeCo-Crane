@@ -1,0 +1,13 @@
+Source:,/home/im1716/Documents/Electronics/Projects/PMOD-Compatible_Interface_InTeCo-Crane/2-Hardware/design/Crane_Interface.sch,,,,,,,,
+Date:,Fri 05 Oct 2018 16:28:31 BST,,,,,,,,
+Tool:,Eeschema 4.0.2+dfsg1-stable,,,,,,,,
+Generator:,/home/im1716/Documents/Electronics/KiCad-Libraries/BOM_Scripts/bom_csv_grouped_by_value.py,,,,,,,,
+Component Count:,7,,,,,,,,
+,,,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,DigikeyNumber,ManufacturerName,ManufacturerNumber
+1,4,"J1, J2, J3, J4",PMOD_DUAL,PMOD:PMOD_DUAL,Digilent:PMOD_DOUBLE_MALE,,732-5354-ND,Wurth Electronics Inc.,61301221021
+2,1,P1,CONN_040,Connectors:CONN_040,Connectors:CONN_2.54mm_2x20,,S9175-ND,Sullins Connector Solutions,SBH11-PBPC-D20-ST-BK
+3,1,P2,CONN_003,Connectors:CONN_003,Connectors:CONN_2.54mm_1x03,,732-5316-ND,Wurth Electronics,61300311121
+4,1,P3,CONN_006,Connectors:CONN_006,Connectors:CONN_2.54mm_2x03,,609-3234-ND,Amphenol FCI,67997-206HLF
+5,4,,CABLE,,,,1286-1102-ND,Digilent Inc.,240-021-2
+6,3,,JUMPERS,,,,S9337-ND,Sullins Connector Solutions,QPC02SXGN-RC
