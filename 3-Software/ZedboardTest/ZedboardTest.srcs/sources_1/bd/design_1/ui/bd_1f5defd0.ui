@@ -1,0 +1,73 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port MOT_Y_LIM -pg 1 -y -500 -defaultsOSRD
+preplace port MOT_X_BRK -pg 1 -y -670 -defaultsOSRD
+preplace port DDR -pg 1 -y -170 -defaultsOSRD
+preplace port MOT_Z_OTF -pg 1 -y -530 -defaultsOSRD
+preplace port MOT_Z_BRK -pg 1 -y -250 -defaultsOSRD
+preplace port sws_8bits -pg 1 -y 190 -defaultsOSRD
+preplace port leds_8bits -pg 1 -y 60 -defaultsOSRD
+preplace port MOT_X_OTF -pg 1 -y -640 -defaultsOSRD
+preplace port btns_5bits -pg 1 -y -70 -defaultsOSRD
+preplace port MOT_Y_OTF -pg 1 -y -550 -defaultsOSRD
+preplace port MOT_Z_DIR -pg 1 -y -270 -defaultsOSRD
+preplace port MOT_X_PWM -pg 1 -y -710 -defaultsOSRD
+preplace port MOT_Y_DIR -pg 1 -y -480 -defaultsOSRD
+preplace port MOT_Z_PWM -pg 1 -y -290 -defaultsOSRD
+preplace port MOT_X_LIM -pg 1 -y -710 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -150 -defaultsOSRD
+preplace port MOT_Z_LIM -pg 1 -y -290 -defaultsOSRD
+preplace port MOT_X_DIR -pg 1 -y -690 -defaultsOSRD
+preplace port MOT_Y_BRK -pg 1 -y -460 -defaultsOSRD
+preplace port MOT_Y_PWM -pg 1 -y -500 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y -790 -defaultsOSRD
+preplace inst axi_motor_0 -pg 1 -lvl 3 -y -690 -defaultsOSRD
+preplace inst axi_motor_1 -pg 1 -lvl 3 -y -480 -defaultsOSRD
+preplace inst axi_motor_2 -pg 1 -lvl 3 -y -270 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -y -70 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y -350 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -y 60 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 3 -y 190 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y -310 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y -90 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 3 800J -90 1300J -160 1680J
+preplace netloc motor_limit_hard_3 1 0 3 10J -580 NJ -580 1360J
+preplace netloc axi_motor_1_motor_pwm 1 3 1 N
+preplace netloc axi_motor_2_motor_brake 1 3 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 830
+preplace netloc motor_therm_1 1 0 3 0J -670 NJ -670 NJ
+preplace netloc axi_interconnect_0_M02_AXI 1 2 1 1330
+preplace netloc axi_motor_2_motor_direc 1 3 1 N
+preplace netloc motor_therm_2 1 0 3 NJ -550 NJ -550 1350J
+preplace netloc axi_motor_0_motor_brake 1 3 1 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 -440 790
+preplace netloc motor_therm_3 1 0 3 NJ -530 NJ -530 1320J
+preplace netloc axi_motor_0_motor_direc 1 3 1 N
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 1 810
+preplace netloc axi_interconnect_0_M04_AXI 1 2 1 1290
+preplace netloc xlconstant_0_dout 1 2 1 1370
+preplace netloc axi_motor_2_motor_pwm 1 3 1 N
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 810J -80 1370J -150 NJ
+preplace netloc axi_motor_1_motor_brake 1 3 1 N
+preplace netloc axi_gpio_0_GPIO 1 3 1 N
+preplace netloc axi_interconnect_0_M05_AXI 1 2 1 1270
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 1290
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 840 -540 1280J
+preplace netloc axi_gpio_2_GPIO 1 3 1 N
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 1310
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 -460 820 -560 1340J
+preplace netloc axi_gpio_1_GPIO 1 3 1 N
+preplace netloc motor_limit_hard_1 1 0 3 NJ -710 NJ -710 NJ
+preplace netloc axi_motor_0_motor_pwm 1 3 1 N
+preplace netloc axi_interconnect_0_M03_AXI 1 2 1 1310
+preplace netloc motor_limit_hard_2 1 0 3 0J -600 NJ -600 1380J
+preplace netloc axi_motor_1_motor_direc 1 3 1 N
+levelinfo -pg 1 -20 580 1120 1530 1700 -top -940 -bot 400
+",
+}
+{
+   da_board_cnt: "3",
+   da_clkrst_cnt: "4",
+   da_ps7_cnt: "1",
+}
