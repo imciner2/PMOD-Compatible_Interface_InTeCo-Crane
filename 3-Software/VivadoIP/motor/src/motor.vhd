@@ -10,7 +10,7 @@ entity motor is
     -- The PWM counter bit width
     PWM_CNT_BIT_WIDTH     : integer := 32;
 
-    -- The number of limit switch inputs
+    -- The number of soft limit switch inputs
     NUM_MOTOR_LIMIT_FLAGS : integer := 30;
 
     -- Masks for the limit switch directions

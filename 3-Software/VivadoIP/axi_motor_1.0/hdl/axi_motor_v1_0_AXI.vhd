@@ -145,12 +145,6 @@ architecture arch_imp of axi_motor_v1_0_AXI is
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
 
-	signal pwm_enable : std_logic;
-	signal brake_req  : std_logic;
-	signal limit_met  : std_logic;
-
-
-
 begin
 	-- I/O Connections assignments
 
@@ -467,57 +461,33 @@ begin
 	-- Add user logic here
 
 	-- Get the brake signal
-	brake_req   <= slv_reg2(1);
-	MOTOR_BRAKE <= brake_req;
-
-	-- Get the direction signal
-	MOTOR_DIREC <= slv_reg2(2);
-
-	-- See if a limit switch is active
-	limit_test : process (MOTOR_LIMIT_SOFT) is
-	begin
-		limit_met <= '1';
-
-		if ( MOTOR_LIMIT_SOFT = (MOTOR_LIMIT_SOFT'range => '0') ) then
-			limit_met <= '0';
-		end if;
-	end process;
-
-	-- The PWM is not enabled when the brake is applied, when the thermal flag is active, or when a limit switch is active
-	pwm_enable <= (NOT brake_req) AND (NOT MOTOR_THERM) AND (NOT limit_met) AND (NOT MOTOR_LIMIT_HARD) AND slv_reg2(0);
-
-	-- Populate the flag status register
-	slv_reg3(C_S_AXI_DATA_WIDTH-1) <= MOTOR_THERM;
-	slv_reg3(C_S_AXI_DATA_WIDTH-2 downto NUM_MOTOR_LIMIT_FLAGS+1) <= (others => '0');
-	slv_reg3(NUM_MOTOR_LIMIT_FLAGS downto 1) <= MOTOR_LIMIT_SOFT;
-	slv_reg3(0) <= MOTOR_LIMIT_HARD;
-
-	-- Create the PWM generator
-	PWM_GEN : entity xil_defaultlib.pwm 
-  generic map (
-    PWM_CNT_BIT_WIDTH => PWM_CNT_BIT_WIDTH
+	motor_drive : entity xil_defaultlib.driver
+  generic map(
+    PWM_CNT_BIT_WIDTH     => PWM_CNT_BIT_WIDTH,
+    NUM_MOTOR_LIMIT_FLAGS => NUM_MOTOR_LIMIT_FLAGS
   )
   port map(
-    -- Clock signal
-    clk        => PWM_CLK,
+    PWM_CLK          => PWM_CLK,
+    RESET            => (NOT S_AXI_ARESETN),
 
-    -- Enable signal for the PWM (active high)
-    en         => pwm_enable,
+    MOTOR_PWM        => MOTOR_PWM,
+    MOTOR_DIREC      => MOTOR_DIREC,
+    MOTOR_BRAKE      => MOTOR_BRAKE,
+    MOTOR_LIMIT_HARD => MOTOR_LIMIT_HARD,
+    MOTOR_LIMIT_SOFT => MOTOR_LIMIT_SOFT,
+    MOTOR_THERM      => MOTOR_THERM,
 
-    -- Asynchronous reset signal (active high)
-    rst        => S_AXI_ARESETN,
+    ENABLE           => slv_reg2(0),
+    BRAKE            => slv_reg2(1),
+    DIRECTION        => slv_reg2(2),
+    PERIOD           => unsigned( slv_reg0(PWM_CNT_BIT_WIDTH-1 downto 0) ),
+    DUTY             => unsigned( slv_reg1(PWM_CNT_BIT_WIDTH-1 downto 0) ),
+    LIMIT_FLAGS      => slv_reg3(NUM_MOTOR_LIMIT_FLAGS downto 0),
+    THERM_FLAG       => slv_reg3(C_S_AXI_DATA_WIDTH-1),
 
-    -- Duty cycle (counter point to transition from high to low)
-    pwm_duty   => unsigned( slv_reg1(PWM_CNT_BIT_WIDTH-1 downto 0) ),
-
-    -- Period (counter point at which to transition from low to high)
-    pwm_period => unsigned( slv_reg0(PWM_CNT_BIT_WIDTH-1 downto 0) ),
-
-    -- PWM signal output
-    pwm_o      => MOTOR_PWM
+    LIMIT_MASK_DIR_0 => slv_reg4(NUM_MOTOR_LIMIT_FLAGS downto 0),
+    LIMIT_MASK_DIR_1 => slv_reg5(NUM_MOTOR_LIMIT_FLAGS downto 0)
   );
-
-
 
 	-- User logic ends
 
