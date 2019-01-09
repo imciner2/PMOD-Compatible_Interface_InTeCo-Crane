@@ -145,6 +145,10 @@ architecture arch_imp of axi_motor_v1_0_AXI is
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
 
+	signal brake      : std_logic;
+	signal reset      : std_logic;
+	signal therm      : std_logic;
+	signal limit_hard : std_logic;
 begin
 	-- I/O Connections assignments
 
@@ -460,6 +464,14 @@ begin
 
 	-- Add user logic here
 
+	-- Invert the reset signal for the PWM core
+	reset       <= NOT S_AXI_ARESETN;
+
+	-- Allow for the inversion of the signals if the software chooses
+	MOTOR_BRAKE <= slv_reg2(3) XOR brake;
+	limit_hard  <= slv_reg2(4) XOR MOTOR_LIMIT_HARD;
+	therm       <= slv_reg2(5) XOR MOTOR_THERM;
+
 	-- Get the brake signal
 	motor_drive : entity xil_defaultlib.driver
   generic map(
@@ -468,14 +480,14 @@ begin
   )
   port map(
     PWM_CLK          => PWM_CLK,
-    RESET            => (NOT S_AXI_ARESETN),
+    RESET            => reset,
 
     MOTOR_PWM        => MOTOR_PWM,
     MOTOR_DIREC      => MOTOR_DIREC,
-    MOTOR_BRAKE      => MOTOR_BRAKE,
-    MOTOR_LIMIT_HARD => MOTOR_LIMIT_HARD,
+    MOTOR_BRAKE      => brake,
+    MOTOR_LIMIT_HARD => limit_hard,
     MOTOR_LIMIT_SOFT => MOTOR_LIMIT_SOFT,
-    MOTOR_THERM      => MOTOR_THERM,
+    MOTOR_THERM      => therm,
 
     ENABLE           => slv_reg2(0),
     BRAKE            => slv_reg2(1),

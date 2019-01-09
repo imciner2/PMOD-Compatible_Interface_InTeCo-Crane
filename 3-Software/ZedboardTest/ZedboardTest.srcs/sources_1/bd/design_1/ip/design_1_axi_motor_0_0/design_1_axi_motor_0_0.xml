@@ -508,7 +508,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_CLK.CLK_DOMAIN">design_1_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_CLK.CLK_DOMAIN"/>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -696,11 +696,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 08 18:21:19 UTC 2019</spirit:value>
+            <spirit:value>Wed Jan 09 20:19:23 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:ddec4a27</spirit:value>
+            <spirit:value>7:cdb9fd22</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -715,11 +715,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 08 18:21:19 UTC 2019</spirit:value>
+            <spirit:value>Wed Jan 09 20:19:23 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:ddec4a27</spirit:value>
+            <spirit:value>7:cdb9fd22</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -734,11 +734,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 08 18:21:19 UTC 2019</spirit:value>
+            <spirit:value>Wed Jan 09 20:19:23 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:ae22f65e</spirit:value>
+            <spirit:value>7:819eb893</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -753,11 +753,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 08 18:21:19 UTC 2019</spirit:value>
+            <spirit:value>Wed Jan 09 20:19:23 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:ae22f65e</spirit:value>
+            <spirit:value>7:819eb893</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1211,16 +1211,21 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/03e4/src/pwm.vhd</spirit:name>
+        <spirit:name>../../ipshared/9d92/src/pwm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/03e4/hdl/axi_motor_v1_0_AXI.vhd</spirit:name>
+        <spirit:name>../../ipshared/9d92/hdl/axi_motor_v1_0_AXI.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/03e4/hdl/axi_motor_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/9d92/hdl/axi_motor_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/9d92/src/driver.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1234,16 +1239,22 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/03e4/src/pwm.vhd</spirit:name>
+        <spirit:name>../../ipshared/9d92/src/pwm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/03e4/hdl/axi_motor_v1_0_AXI.vhd</spirit:name>
+        <spirit:name>../../ipshared/9d92/hdl/axi_motor_v1_0_AXI.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/03e4/hdl/axi_motor_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/9d92/hdl/axi_motor_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/9d92/src/driver.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1255,7 +1266,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>3D Crane Motor Interface</spirit:description>
+  <spirit:description>3D Crane Motor Interface with AXI interface</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>C_AXI_DATA_WIDTH</spirit:name>
@@ -1325,7 +1336,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>axi_motor_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="user.org:user:axi_motor:1.0_ARCHIVE_LOCATION">/home/im1716/Documents/Electronics/Projects/PMOD-Compatible_Interface_InTeCo-Crane/3-Software/VivadoIP/axi_motor_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="user.org:3D_Crane:axi_motor:1.0_ARCHIVE_LOCATION">/home/im1716/Documents/Electronics/Projects/PMOD-Compatible_Interface_InTeCo-Crane/3-Software/VivadoIP/axi_motor_1.0</xilinx:tag>
@@ -1333,7 +1344,7 @@
         <xilinx:tag xilinx:name="Imperial College:Crane:axi_motor:1.0_ARCHIVE_LOCATION">/home/im1716/Documents/Electronics/Projects/PMOD-Compatible_Interface_InTeCo-Crane/3-Software/VivadoIP/axi_motor_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="Imperial:Crane:axi_motor:1.0_ARCHIVE_LOCATION">/home/im1716/Documents/Electronics/Projects/PMOD-Compatible_Interface_InTeCo-Crane/3-Software/VivadoIP/axi_motor_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="user.org:Crane:axi_motor:1.0_ARCHIVE_LOCATION">/home/im1716/Documents/Electronics/Projects/PMOD-Compatible_Interface_InTeCo-Crane/3-Software/VivadoIP/axi_motor_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="user.edu:Crane:axi_motor:1.0_ARCHIVE_LOCATION">/home/im1716/Documents/Electronics/Projects/PMOD-Compatible_Interface_InTeCo-Crane/3-Software/VivadoIP/axi_motor_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="user.edu:Crane:axi_motor:1.0_ARCHIVE_LOCATION">/home/imcinerney/Documents/Electronics/Projects/PMOD-Compatible_InTeCo-Crane/3-Software/VivadoIP/axi_motor_1.0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.ADDR_WIDTH" xilinx:valueSource="user"/>
@@ -1363,7 +1374,6 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_ACLK.ASSOCIATED_BUSIF" xilinx:valueSource="constant"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_ACLK.CLK_DOMAIN" xilinx:valueSource="default_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_ACLK.FREQ_HZ" xilinx:valueSource="user_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PWM_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PWM_CLK.FREQ_HZ" xilinx:valueSource="user_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_MOTOR_LIMIT_FLAGS" xilinx:valueSource="user"/>
@@ -1373,7 +1383,7 @@
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="349d8201"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ce764ecb"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0045358b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fced6e8d"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="e4a1bb39"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="44bb5b65"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="561646b5"/>

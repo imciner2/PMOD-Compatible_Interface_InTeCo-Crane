@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
---Date        : Tue Jan  8 18:35:30 2019
+--Date        : Wed Jan  9 20:19:22 2019
 --Host        : ee-im176 running 64-bit Ubuntu 16.04.5 LTS
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2297,6 +2297,11 @@ architecture STRUCTURE of design_1 is
     gpio_io_i : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component design_1_axi_gpio_2_0;
+  component design_1_xlconstant_0_0 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component design_1_xlconstant_0_0;
   component design_1_axi_motor_0_0 is
   port (
     pwm_clk : in STD_LOGIC;
@@ -2393,11 +2398,6 @@ architecture STRUCTURE of design_1 is
     axi_aresetn : in STD_LOGIC
   );
   end component design_1_axi_motor_2_0;
-  component design_1_xlconstant_0_0 is
-  port (
-    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component design_1_xlconstant_0_0;
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal axi_gpio_1_GPIO_TRI_O : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal axi_gpio_2_GPIO_TRI_I : STD_LOGIC_VECTOR ( 7 downto 0 );

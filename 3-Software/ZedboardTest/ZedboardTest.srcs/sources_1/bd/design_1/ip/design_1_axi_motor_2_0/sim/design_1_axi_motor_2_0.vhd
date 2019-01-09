@@ -47,11 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: user.edu:Crane:axi_motor:1.0
--- IP Revision: 2
+-- IP Revision: 4
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
+
+LIBRARY xil_defaultlib;
+USE xil_defaultlib.axi_motor_v1_0;
 
 ENTITY design_1_axi_motor_2_0 IS
   PORT (
