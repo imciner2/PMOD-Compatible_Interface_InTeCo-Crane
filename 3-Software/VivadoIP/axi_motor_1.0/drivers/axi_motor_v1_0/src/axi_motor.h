@@ -58,6 +58,39 @@
 #define AXI_MOTOR_mReadReg(BaseAddress, RegOffset) \
     Xil_In32((BaseAddress) + (RegOffset))
 
+
+/*
+ * Register map for the AXI_MOTOR module
+ */
+typedef struct AXI_MOTOR_REG_MAP {
+	// Slave register 0
+	uint32_t period;
+
+	// Slave register 1
+	uint32_t duty;
+
+	// Slave register 2
+	uint32_t enable:1;
+	uint32_t brake:1;
+	uint32_t direction:1;
+	uint32_t invert_Brake:1;
+	uint32_t invert_HardLimit:1;
+	uint32_t invert_therm:1;
+	uint32_t :26;
+
+	// Slave register 3
+	uint32_t flag_hardLimit:1;
+	uint32_t flag_softLimit:30;
+	uint32_t flag_therm:1;
+
+	// Slave register 4
+	uint32_t limitMask_dir0;
+
+	//Slave register 5
+	uint32_t limitMask_dir1;
+
+}__attribute__((__packed__)) AXI_MOTOR_REG_MAP;
+
 /************************** Function Prototypes ****************************/
 /**
  *
