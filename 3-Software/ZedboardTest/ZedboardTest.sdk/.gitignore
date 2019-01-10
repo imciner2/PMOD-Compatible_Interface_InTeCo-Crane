@@ -1,0 +1,8 @@
+*.sdk
+*.a
+*.elf
+*.elf.size
+*.d
+*.o
+!.project
+!.cproject
