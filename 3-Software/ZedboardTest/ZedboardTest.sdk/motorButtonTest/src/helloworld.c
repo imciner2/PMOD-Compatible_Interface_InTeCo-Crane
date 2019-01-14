@@ -128,9 +128,9 @@ int main()
     mot_z->enable = 1;
 
     while ( !sw->SW7 ) {
-    	led->LED0 = mot_x->flag_therm;
-    	led->LED1 = mot_x->flag_hardLimit;
-    	led->LED2 = mot_y->flag_therm;
+      led->LED0 = mot_x->flag_therm;
+      led->LED1 = mot_x->flag_hardLimit;
+      led->LED2 = mot_y->flag_therm;
       led->LED3 = mot_y->flag_hardLimit;
       led->LED4 = mot_z->flag_therm;
       led->LED5 = mot_z->flag_hardLimit;
