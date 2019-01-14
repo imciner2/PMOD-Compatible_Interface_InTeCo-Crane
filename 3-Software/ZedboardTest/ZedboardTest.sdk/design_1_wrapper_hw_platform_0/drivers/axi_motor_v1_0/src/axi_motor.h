@@ -5,8 +5,6 @@
 
 /****************** Include Files ********************/
 #include "xil_types.h"
-#include <stdint.h>
-#include <stddef.h>
 #include "xstatus.h"
 
 #define AXI_MOTOR_AXI_SLV_REG0_OFFSET 0
@@ -17,6 +15,7 @@
 #define AXI_MOTOR_AXI_SLV_REG5_OFFSET 20
 #define AXI_MOTOR_AXI_SLV_REG6_OFFSET 24
 #define AXI_MOTOR_AXI_SLV_REG7_OFFSET 28
+
 
 /**************************** Type Definitions *****************************/
 /**
@@ -59,38 +58,6 @@
 #define AXI_MOTOR_mReadReg(BaseAddress, RegOffset) \
     Xil_In32((BaseAddress) + (RegOffset))
 
-/*
- * Register map for the AXI_MOTOR module
- */
-typedef struct AXI_MOTOR_REG_MAP {
-	// Slave register 0
-	uint32_t period;
-
-	// Slave register 1
-	uint32_t duty;
-
-	// Slave register 2
-	uint32_t enable:1;
-	uint32_t brake:1;
-	uint32_t direction:1;
-	uint32_t invert_Brake:1;
-	uint32_t invert_HardLimit:1;
-	uint32_t invert_therm:1;
-	uint32_t :26;
-
-	// Slave register 3
-	uint32_t flag_hardLimit:1;
-	uint32_t flag_softLimit:30;
-	uint32_t flag_therm:1;
-
-	// Slave register 4
-	uint32_t limitMask_dir0;
-
-	//Slave register 5
-	uint32_t limitMask_dir1;
-
-}__attribute__((__packed__)) AXI_MOTOR_REG_MAP;
-
 /************************** Function Prototypes ****************************/
 /**
  *
@@ -112,19 +79,5 @@ typedef struct AXI_MOTOR_REG_MAP {
  *
  */
 XStatus AXI_MOTOR_Reg_SelfTest(void * baseaddr_p);
-
-/*
-void AXI_MOTOR_setFrequency( void* baseaddr_p );
-void AXI_MOTOR_setPeriodCnt( void* baseaddr_p );
-uint32_t AXI_MOTOR_getPeriodCnt( void* baseaddr_p );
-
-void AXI_MOTOR_setDutyFrequency( void* baseaddr_p )
-void AXI_MOTOR_setDutyCnt( void* baseaddr_p );
-uint32_t AXI_MOTOR_getDutyCnt( void* baseaddr_p );
-
-void AXI_MOTOR_Enable( void* baseaddr_p );
-void AXI_MOTOR_Disable( void* baseaddr_p );
-bool AXI_MOTOR_isRunning( void* baseaddr_p );
-*/
 
 #endif // AXI_MOTOR_H

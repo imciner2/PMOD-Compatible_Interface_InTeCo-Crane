@@ -110,15 +110,15 @@ int main()
 
     mot_y->period = 10000;
     mot_y->invert_Brake = 0;
-    mot_y->invert_HardLimit = 0;
-	mot_y->invert_therm = 0;
+    mot_y->invert_HardLimit = 1;
+	mot_y->invert_therm = 1;
 	mot_y->limitMask_dir0 = 0;
 	mot_y->limitMask_dir1 = 1;
 
     mot_z->period = 10000;
 	mot_z->invert_Brake = 0;
     mot_z->invert_HardLimit = 0;
-	mot_z->invert_therm = 0;
+	mot_z->invert_therm = 1;
 	mot_z->limitMask_dir0 = 0;
 	mot_z->limitMask_dir1 = 1;
 
@@ -147,10 +147,10 @@ int main()
 		}
 
 		if (btn->BTND) {
-			mot_y->duty = 2500;
+			mot_y->duty = 5000;
 			mot_y->direction = 1;
 		} else if (btn->BTNU) {
-			mot_y->duty = 2500;
+			mot_y->duty = 5000;
 			mot_y->direction = 0;
 		} else {
 			mot_y->duty = 0;
@@ -158,10 +158,10 @@ int main()
 		}
 
 		if (btn->BTNL) {
-			mot_x->duty = 2500;
+			mot_x->duty = 5000;
 			mot_x->direction = 1;
 		} else if (btn->BTNR) {
-			mot_x->duty = 2500;
+			mot_x->duty = 5000;
 			mot_x->direction = 0;
 		} else {
 			mot_x->duty = 0;

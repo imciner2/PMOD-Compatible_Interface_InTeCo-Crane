@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="/home/im1716/Documents/Electronics/Projects/PMOD-Compatible_Interface_InTeCo-Crane/3-Software/ZedboardTest/ZedboardTest.xpr">
+<Project Version="7" Minor="20" Path="/home/imcinerney/Documents/Electronics/Projects/PMOD-Compatible_InTeCo-Crane/3-Software/ZedboardTest/ZedboardTest.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f7578a14783d4683bb6aa43b669573f6"/>
